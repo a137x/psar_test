@@ -1,0 +1,16 @@
+[package]
+name = "parabolic_sar"
+description = "Fast Parabolic SAR in Rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["AP"]
+
+[dependencies]
+criterion = "0.5"  # Benchmarking library
+
+[dev-dependencies]
+rand = "0.9.0"       # For generating random test data
+
+[[bench]]
+name = "sar_benchmark"
+harness = false
